@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import ErrorComponent from './components/errorcomponent';
 
 function App() {
 const rsaPublicKey = "-----BEGIN PUBLIC KEY-----MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAIJ4EX/2tsyp61pGoWncxCkEkkoTUXek+Nb5DVVp5o9sOgcKbLHkxdn/GfY3e8uUqJ7B6q4Z4Om9ML3LDPczMRECAwEAAQ==-----END PUBLIC KEY-----";
@@ -10,7 +11,6 @@ function endWith(x,y) {
     console.log(abc)
     return x.lastIndexOf(y) === x.length-y.length;
 }
-console.log(someObject.foo);
 const receivePostMessage = (e = {}) => {
     const { origin, data } = e;
     if (isCompanyDomain(origin)) {
@@ -22,18 +22,7 @@ const isCompanyDomain = () => true;
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <ErrorComponent />
       </header>
     </div>
   );
