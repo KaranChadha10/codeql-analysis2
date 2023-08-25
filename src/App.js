@@ -13,6 +13,14 @@ function endWith(x,y) {
     return x.lastIndexOf(y) === x.length-y.length;
 }
 console.log(someObject.foo);
+const receivePostMessage = (e = {}) => {
+    const { origin, data } = e;
+    if (isCompanyDomain(origin)) {
+        return data;
+    }
+    return null;
+};
+const isCompanyDomain = () => true;
   return (
     <div className="App">
       <header className="App-header">
