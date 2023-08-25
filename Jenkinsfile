@@ -61,7 +61,7 @@ pipeline {
                         def command = "codeql github upload-results " +
                                     "--github-url=https://api.github.com " +
                                     "--repository=KaranChadha10/codeql-analysis2 " +
-                                    "--ref=refs/heads/master " +
+                                    "--ref=refs/heads/jchadhka/code-scanning " +
                                     "--commit=${GIT_COMMIT} " +
                                     "--sarif=${sarifFile}"
 
