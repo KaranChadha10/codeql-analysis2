@@ -6,10 +6,8 @@ const rsaPublicKey = "-----BEGIN PUBLIC KEY-----MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJB
   const googleApiUrl = "https://maps.google.com/maps/api/js?key=";
   const googleApiKey = "AIzaSyBTp0SoH99Vc8u-jpoMfatw0mHck0NtgTs";
   const abc = 121999999999999999999999999999999999999 * 999999999999999999999999999999999999999;
-  const divideByZero = abc / 0;
 function endWith(x,y) {
     console.log(abc)
-    console.log(divideByZero)
     return x.lastIndexOf(y) === x.length-y.length;
 }
 console.log(someObject.foo);
